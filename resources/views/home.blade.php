@@ -8,7 +8,16 @@
 </head>
 <body>
     <h1>Hello world</h1>
+    <h3>Supereroi: </h3>
+    <ul>
+        @foreach ($supereroi as $eroe)
+            <li>
+                Ecco a voi: {{ $eroe }};
+            </li>
+        
 
-    <h3>{{ $nome }} - {{ $cognome }}</h3>
+        @endforeach
+    </ul>
+    
 </body>
 </html>

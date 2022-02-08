@@ -15,9 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data =[
-        'nome' => 'Tommaso',
-        'cognome' => 'Giannotta',
-        'eta' => 'Non si dice'
+        'supereroi' => [
+            'Bruce Banner',
+            'Sue Storm',
+            'Matt Murdock'
+
+        ]
     ];
     return view('home', $data);
 });
+
+
+
+
+
+/* 'nome' => 'Tommaso',
+        'cognome' => 'Giannotta',
+        'eta' => 'Non si dice' */
